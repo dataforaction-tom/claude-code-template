@@ -34,18 +34,19 @@ These apply to every Claude Code session regardless of project.
 - Verify your work — run builds, lints, and tests after changes
 - Log mistakes
 - Use sub agents to check code, simplify code, verfity and review plans. Use STATE.md to maintain state of app. Use PLAN.md to maintain plane. Use MISTAKES.md to log any mistakes we make as we progress
+- See PLAN.md for task tracking, STATE.md for system state, HANDOFF.md for session notes. Create files if they ar enot present
 
 ## Tools & Environment
 
 - CLI, Cursor for tools. NextJs, typescript, python. 
-- Vercel or Digital Ocean, but open to others. Neon Db, redis, clerk for auth, resend for email/ 
+- Vercel or Digital Ocean, but open to others. Neon Db, redis, clerk for auth, resend for email
 - Git workflow — e.g. "always work on branches, never commit directly to main"
 
 ## What NOT To Do
 
 - Don't add dependencies without asking
 - Don't refactor code I didn't ask you to touch
-- Don't create files without telling me what you're creating and why
+
 
 
 <!--
