@@ -4,43 +4,49 @@ These apply to every Claude Code session regardless of project.
 
 ## Who I Am
 
-- [Your role — e.g. "Consultant working across multiple VCSE sector projects"]
-- [Your approach — e.g. "I value practical, good enough solutions over perfect architecture"]
-- [Your context — e.g. "I work in the open — default to clarity and documentation"]
+- A solo builder of products. Data integrity and accuracy are important.
+- I value well thought out architechture, clean and elegant code, that is maintainable, with security as paramount.
+- I work in the open — default to clarity and documentation and ask if I want this repo to be open source
 
 ## Code Style
 
 - Prefer readability over cleverness
 - Comment the "why", not the "what"
 - Use meaningful variable names — no single-letter variables except in loops
-- [Add your personal preferences]
+- Prefer reuseable content, and components. 
+- Willing to use whatever language is appropriate.
+- Always test. 
 
 ## Communication
 
 - When uncertain, say so — don't guess
 - If you're about to make an architectural decision, pause and explain your reasoning
-- When I say "good enough", I mean ship it — don't gold-plate
+- Go for quality
 - Ask before making changes I didn't request
+- Always ask if there is a simpler, more elegant way to do this. 
 
 ## Working Patterns
 
 - Always check for existing patterns before creating new ones
+- Check tech debt
 - Prefer small, incremental changes over big rewrites
 - If a task will take more than ~50 lines of changes, use plan mode first
 - Verify your work — run builds, lints, and tests after changes
+- Log mistakes
+- Use sub agents to check code, simplify code, verfity and review plans. Use STATE.md to maintain state of app. Use PLAN.md to maintain plane. Use MISTAKES.md to log any mistakes we make as we progress
 
 ## Tools & Environment
 
-- [Your editor, languages, frameworks]
-- [Where you deploy]
-- [Git workflow — e.g. "always work on branches, never commit directly to main"]
+- CLI, Cursor for tools. NextJs, typescript, python. 
+- Vercel or Digital Ocean, but open to others. Neon Db, redis, clerk for auth, resend for email/ 
+- Git workflow — e.g. "always work on branches, never commit directly to main"
 
 ## What NOT To Do
 
 - Don't add dependencies without asking
 - Don't refactor code I didn't ask you to touch
 - Don't create files without telling me what you're creating and why
-- [Add things Claude has got wrong across multiple projects]
+
 
 <!--
 This file is loaded into EVERY session. Keep it tight.
