@@ -105,11 +105,21 @@ Subagents run in their own context window, keeping your main session clean.
 
 ### Skills
 
-Skills are invoked via natural language — Claude decides when to use them based on what you ask. See `.claude/skills/README.md` for how to create your own.
+Skills differ from slash commands: you don't invoke them with `/skill-name`. Instead, Claude detects when a skill applies based on what you ask and follows its instructions automatically. Skills live in `.claude/skills/` as `SKILL.md` files and are committed to git, so they travel with the project.
+
+**Included by default:**
 
 | Skill | What it does |
 |-------|--------------|
 | `docs-updater` | Reviews git changes and updates end-user documentation — a user guide and structured changelog in markdown, ready for mkdocs hosting |
+
+**When to create a skill vs a command vs a subagent:**
+
+- **Skill** — a repeatable process Claude should follow whenever the situation arises (e.g. "update docs", "deploy to production"). Triggered by natural language.
+- **Command** — an action you want to invoke explicitly at a specific time (e.g. `/catchup`, `/review`). Triggered by `/command-name`.
+- **Subagent** — a specialised reviewer that runs in its own context window, keeping your main session clean (e.g. code review, plan review).
+
+See `.claude/skills/README.md` for how to create your own skills.
 
 ## The Core Workflow
 

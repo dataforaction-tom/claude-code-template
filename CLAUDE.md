@@ -7,6 +7,9 @@
 - `src/` — [what lives here]
 - `public/` — [static assets, etc.]
 - `lib/` — [shared utilities]
+- `.claude/commands/` — slash commands (catchup, commit-push-pr, reflect, review, status, techdebt)
+- `.claude/agents/` — subagents (code-reviewer, code-simplifier, plan-reviewer, verify-app)
+- `.claude/skills/` — skills invoked via natural language (docs-updater). See `.claude/skills/README.md` to add more.
 - [Add key directories as they emerge]
 
 ## Commands
